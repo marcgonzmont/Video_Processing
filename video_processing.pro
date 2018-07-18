@@ -5,7 +5,6 @@
 #-------------------------------------------------
 
 QT       += core gui
-
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = video_processing
@@ -47,3 +46,5 @@ INCLUDEPATH += /usr/local/include
 LIBS += -L/usr/local/lib \
     -lopencv_world
 }
+
+DISTFILES +=
