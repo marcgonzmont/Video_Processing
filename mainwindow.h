@@ -8,7 +8,7 @@
 #include <QSettings>
 #include <QDir>
 #include <QDate>
-#include <QStringView>
+#include <QFileInfo>
 #include <QFile>
 #include "opencv2/opencv.hpp"
 
@@ -26,6 +26,10 @@ public:
 
 protected:
     void closeEvent(QCloseEvent *event);
+
+    void finishEvent();
+
+    void checkArg(QString arg);
 
 private slots:
     void on_inputPushButton_pressed();
